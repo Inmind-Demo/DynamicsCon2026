@@ -1,0 +1,36 @@
+{
+    "id": "b2c3d4e5-f6a7-8901-bcde-f12345678902",
+    "name": "Purchase Requisition Tests",
+    "publisher": "Inmind Development",
+    "version": "1.0.0.0",
+    "brief": "Automated tests for the Purchase Requisition extension.",
+    "description": "Contains AL test codeunits covering approval management, PO conversion, and table behaviour for the Purchase Requisition extension.",
+    "privacyStatement": "",
+    "EULA": "",
+    "help": "",
+    "url": "",
+    "logo": "",
+    "dependencies": [
+        {
+            "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+            "name": "Purchase Requisition",
+            "publisher": "Inmind Development",
+            "version": "1.0.0.0"
+        }
+    ],
+    "screenshots": [],
+    "platform": "26.0.0.0",
+    "application": "26.0.0.0", 
+    "idRanges": [
+        {
+            "from": 50050,
+            "to": 50099
+        }
+    ],
+    "resourceExposurePolicy": {
+        "allowDebugging": true,
+        "allowDownloadingSource": true,
+        "includeSourceInSymbolFile": true
+    },
+    "runtime": "15.0"
+}

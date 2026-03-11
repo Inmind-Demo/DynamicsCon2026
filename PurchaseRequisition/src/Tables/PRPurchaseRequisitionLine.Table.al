@@ -34,22 +34,17 @@ table 50001 "PR Purchase Requisition Line"
         {
             Caption = 'No.';
             DataClassification = CustomerContent;
+            // Conditional table relation drives the lookup dropdown shown in the UI.
+            // BC uses this to render the correct list page (Item List, Chart of Accounts,
+            // Resource List, or Fixed Asset List) when the user clicks the lookup icon.
+            TableRelation = if (Type = const(Item)) Item
+                            else if (Type = const("G/L Account")) "G/L Account"."No."
+                                where("Account Type" = const(Posting),
+                                      "Direct Posting" = const(true))
+                            else if (Type = const(Resource)) Resource
+                            else if (Type = const("Fixed Asset")) "Fixed Asset";
 
             trigger OnValidate()
-            begin
-                case Type of
-                    Type::Item:
-                        LookupItem();
-                    Type::"G/L Account":
-                        LookupGLAccount();
-                    Type::Resource:
-                        LookupResource();
-                    Type::"Fixed Asset":
-                        LookupFixedAsset();
-                end;
-            end;
-
-            trigger OnLookup()
             begin
                 case Type of
                     Type::Item:

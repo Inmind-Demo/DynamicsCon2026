@@ -172,8 +172,7 @@ codeunit 50000 "PR Approval Management"
     var
         RejectionPage: Page "PR Rejection Reason Dialog";
     begin
-        RejectionPage.LookupMode(true);
-        if RejectionPage.RunModal() = Action::LookupOK then begin
+        if RejectionPage.RunModal() in [Action::OK, Action::LookupOK] then begin
             RejectionReason := RejectionPage.GetRejectionReason();
             exit(true);
         end;

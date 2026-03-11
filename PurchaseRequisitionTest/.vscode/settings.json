@@ -1,0 +1,4 @@
+{
+    "al-test-runner.launchConfigName": "Your own server",
+    "al-test-runner.containerName": "bcserver"
+}

@@ -8,6 +8,9 @@
             "path": "PurchaseRequisition"
         },
         {
+            "path": "PurchaseRequisitionTest"
+        },
+        {
             "path": ".AL-Go"
         }
     ],
