@@ -1,0 +1,33 @@
+{
+    "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+    "name": "Purchase Requisition",
+    "publisher": "Inmind Development",
+    "version": "1.0.0.0",
+    "brief": "Purchase Requisition document for structured, approval-driven purchase requests.",
+    "description": "Introduces a formal Purchase Requisition process with approval workflow and conversion to Purchase Orders in Business Central.",
+    "privacyStatement": "",
+    "EULA": "",
+    "help": "",
+    "url": "",
+    "logo": "",
+    "dependencies": [],
+    "screenshots": [],
+    "platform": "26.0.0.0",
+    "application": "26.0.0.0",
+    "idRanges": [
+        {
+            "from": 50000,
+            "to": 50099
+        }
+    ],
+    "resourceExposurePolicy": {
+        "allowDebugging": true,
+        "allowDownloadingSource": true,
+        "includeSourceInSymbolFile": true
+    },
+    "runtime": "15.0",
+    "features": [
+        "TranslationFile",
+        "GenerateCaptions"
+    ]
+}

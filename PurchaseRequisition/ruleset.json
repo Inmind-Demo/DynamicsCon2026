@@ -1,0 +1,22 @@
+{
+    "name": "BC",
+    "description": "Rules",
+    "generalAction": "Hidden",
+    "rules": [
+        {
+            "id": "AA0005",
+            "action": "Hidden",
+            "justification": "Allow BEGIN..END for clarity"
+        },
+        {
+            "id": "AA0021",
+            "action": "Hidden",
+            "justification": "Allow to decide variable declaration order"
+        },
+        {
+            "id": "AA0247",
+            "action": "Hidden",
+            "justification": "Namespace usage to be determined by team"
+        }
+    ]
+}
